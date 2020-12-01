@@ -79,7 +79,7 @@ epoch=range(1,81)
 #plt.plot(epoch, avg_loss, color='red')
 plt.plot(epoch, avg_acc, label='acc changes',color='blue')
 for a,b in zip(epoch,avg_acc):
-    plt.text(a, b+0.05, '%.1f' % b, ha='center', va= 'bottom',fontsize=7)
+    plt.text(a, b+0.05, '%.1f' % b, ha='center', va= 'bottom',fontsize=6)
 plt.xlabel('epochs')# 横坐标描述
 plt.ylabel('accuracy')# 纵坐标描述
 plt.legend()#显示图例
