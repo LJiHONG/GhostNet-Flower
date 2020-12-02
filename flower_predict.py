@@ -19,7 +19,7 @@ img = data_transform(img)
 # expand batch dimension
 img = torch.unsqueeze(img, dim=0)
 
-model=torch.load('weigths/Flowermodel.pth',map_location='cpu')
+model=torch.load('weigths/GhostNetFlowermodel.pth',map_location='cpu')
 model.to(DEVICE)
 flowers=['雏菊','蒲公英','玫瑰','向日葵','郁金香']
 with torch.no_grad():
